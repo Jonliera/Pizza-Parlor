@@ -18,16 +18,25 @@ _
 
 ## Tests
 
-Describe Pizza()
+Describe: Pizza()
 
 Test: It should return a Pizza object with properties of size and toppings
-Code : let testPizza = new Pizza ('small','true','true','false','true');
+Code : let testPizza = new Pizza (size:small, hasSalami:true, hasPepperoni:true,hasHam:false,hasSausage:true);
 Expected Output = Pizza {size :'small',salami:'true',pepperoni:'true',ham:'false',sausage:'true'}
 
+Describe: Pizza.prototype.getTotalTopings()
+
 Test: It should return the amount of toppings added to a pizza
-Code ; let testPizza = new Pizza ('large','true');
+Code : let testPizza = new Pizza ('large','true');
 testPizza.getTotalToppings();
 Expected Output = 1
+
+Describe: Pizza.prototype.getPrice()
+
+Test: It should return the total cost of the Pizza adding the toppings to the size selcted
+Code : let pizzaOne = new Pizza('small','false','false','true');
+pizzaOne.getprice
+Expected Output:11
 
 
 ## Setup/Installation Requirements
