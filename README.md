@@ -24,6 +24,11 @@ Test: It should return a Pizza object with properties of size and toppings
 Code : let testPizza = new Pizza ('small','true','true','false','true');
 Expected Output = Pizza {size :'small',salami:'true',pepperoni:'true',ham:'false',sausage:'true'}
 
+Test: It should return the amount of toppings added to a pizza
+Code ; let testPizza = new Pizza ('large','true');
+testPizza.getTotalToppings();
+Expected Output = 1
+
 
 ## Setup/Installation Requirements
 
