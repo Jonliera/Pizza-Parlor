@@ -36,7 +36,7 @@ Describe: Pizza.prototype.getPrice()
 Test: It should return the total cost of the Pizza adding the toppings to the size selcted
 Code : let pizzaOne = new Pizza('small','false','false','true');
 pizzaOne.getprice
-Expected Output:11
+Expected Output:13
 
 
 ## Setup/Installation Requirements

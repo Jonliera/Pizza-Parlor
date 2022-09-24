@@ -22,6 +22,7 @@ Pizza.prototype.getTotalToppings = function() {
   if (this.sausage){
     amountOfToppings +=1;
   }
+  
   return amountOfToppings;
 }
 
@@ -30,19 +31,19 @@ Pizza.prototype.getPrice = function(){
   const costOfASingleTopping = 1;
   const amountOfToppings = this.getTotalToppings();
 
-  const costOfToppings = costOfASingleTopping * amountOfToppings
+  const costOfToppings = costOfASingleTopping * amountOfToppings;
 
-  let sizeMultiplier;
+  let sizeDefinition;
   if(this.size==='small'){
-    sizeMultiplier = 1;
+    sizeDefinition = 1;
   }
   if (this.size==='medium'){
-    sizeMultiplier = 2;
+    sizeDefinition = 3;
   }
   if (this.size==='large'){
-    sizeMultiplier = 3
+    sizeDefinition = 6
   }
-  const totalCost = (costOfToppings * sizeMultiplier) + basePrice;
+  const totalCost = basePrice + sizeDefinition + costOfToppings;
   return totalCost;
 }
 
