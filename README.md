@@ -2,7 +2,7 @@
 
 #### By _**Jonathan Liera**_
 
-#### _This project will show you .
+####  A webpage to determine a pizza prcie base on the user selection
 
 ## Technologies Used
 
@@ -13,8 +13,7 @@
 * _Javascript_
 
 ## Description
-
-_
+A webpage that Uses HTML, Javascript and CSS to allow a user choose any size of pizza and toppings and return the price.
 
 ## Tests
 

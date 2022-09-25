@@ -47,6 +47,16 @@ Pizza.prototype.getPrice = function(){
   return totalCost;
 }
 
+//UI Logic
 
+function handleFormSubmission(event){
+  event.preventDefault();
+  let sizeInput = document.getElementById('size').value;let toppingsChoice = document.querySelectorAll('input[name="topping"]:checked')
 
+const totalPrice =pizza.getPrice();
+document.querySelector("#totalprice").innerText = totalPrice
 
+let myPizza = new Pizza();
+window.addEventListener('load',function(){
+  document.querySelector('form#order-form').addEventListener('submit',handleFormSubmission)
+});

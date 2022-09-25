@@ -10,29 +10,32 @@
 </head>
 <body>
   <div class="container">
-  <h1>Welcome to Jo - Jo's Pizza </h1>
+  <h1>Welcome to Delicious Pizza </h1>
   <p>We are sure you've tasted Pizza but nothing like our pizza. Go ahead and order some delicious pizza</p>
-  <form id="pizza"></form>
+  <form id="order-form"></form>
   <div class="form-group"></div>
-  <p class="header">Choose the size of your pizza</p>
-  <select id="size" class="form-contol">
+    <p class="header">Choose the size of your pizza</p>
+    <select id="size" class="form-contol">
     <option value="False"></option>
     <option value="Small">Small Pizza + $1</option>
     <option value="Medium">Meidum Pizza + $3</option>
     <option value="Large">Large Pizza + $6</option>
-  </select>
+    </select>
   </div>
   <div class="form-group">
-    <p class="header">Choose your Toppings. Each topping is $1</p>
-    <input type="checkbox" name="topping" value="Salami">Salami<br>
-    <input type="checkbox" name="topping" value="Pepperoni">Pepperoni<br>
-    <input type="checkbox" name="topping" value="Ham">Ham<br>
-    <input type="checkbox" name="topping" value="Sausage">Sausage
+    <p class="topping-choice">Choose your Toppings. Each topping is $1</p>
+    <input type="checkbox" name="topping" value="salami">Salami<br>
+    <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
+    <input type="checkbox" name="topping" value="ham">Ham<br>
+    <input type="checkbox" name="topping" value="sausage">Sausage
   </div>
   <button type="Submit">Order Pizza</button>
+  <div class="final-order">
   <h3>This is your Order:</h3>
-  <div id="final-order">
-    <span id="Complete Order"></span>
+    <p>Enjoy your pizza:</p>
+    <p id="totalprice"></p>
+    
+    <button type="button" onclick="window.location.reload();">Back to Main Menu</button>
   </div>
 
   </div>
