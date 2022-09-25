@@ -2,7 +2,7 @@
 
 #### By _**Jonathan Liera**_
 
-####  A webpage to determine a pizza prcie base on the user selection
+####  A webpage to determine a pizza price base on the user selection.
 
 ## Technologies Used
 
