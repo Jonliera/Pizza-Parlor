@@ -48,13 +48,10 @@ Pizza.prototype.getPrice = function(){
 }
 
 //UI Logic
-const pizza = new Pizza();
 
 function handleFormSubmission(event){
   event.preventDefault();
-  let sizeInput = document.getElementById('size').value;
-  let toppingsChoice = document.querySelectorAll('input[name="topping"]:checked')
-let newPizza =new Pizza()
+let newPizza =new Pizza('small','salami','pepperoni','ham','sausage');
 const totalPrice = newPizza.getPrice();
 document.querySelector("#totalprice").innerText = totalPrice;
 }
