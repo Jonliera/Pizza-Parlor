@@ -51,7 +51,7 @@ Pizza.prototype.getPrice = function(){
 
 function handleFormSubmission(event){
   event.preventDefault();
-let newPizza =new Pizza('small','salami','pepperoni','ham','sausage');
+const newPizza =new Pizza('small','salami','pepperoni','ham','sausage');
 const totalPrice = newPizza.getPrice();
 document.querySelector("#totalprice").innerText = totalPrice;
 }
