@@ -44,15 +44,10 @@ input[type="checkbox"]{
   color: #0f5d5e;
   font-family: 'Courier New', Courier, monospace;
   font-style: bold;
-
-}
-
-.j{
-  outline : 2px solid black;
 }
 
 .bg-image {
   outline: 2px solid black;
-  background-image: url(/img/rest.webp);
+  background-image: url("/img/rest.webp");
   padding: 20em;
 }
