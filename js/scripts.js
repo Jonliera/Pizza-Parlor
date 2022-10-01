@@ -43,7 +43,6 @@ let toppingsArray = [];
       toppingsArray.push(topping);
       });
 const newPizza =new Pizza(pizzaSize,toppingsArray);
-//const totalPrice = newPizza.getPrice();
 document.querySelector("#totalprice").innerText = newPizza.getPrice();
 }
 

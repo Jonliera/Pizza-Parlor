@@ -48,6 +48,6 @@ input[type="checkbox"]{
 
 .bg-image {
   outline: 2px solid black;
-  background-image: url("/img/back.jpg");
+  background-image: url("../img/rest.webp");
   padding: 20em;
 }
