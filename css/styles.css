@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  line-height: 1.8;
+}
+
+#container{
+  margin-top: -300px;
+  background-color: rgb(228, 160, 65);
+}
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  color: rgb(204, 46, 21);
+  font-family: 'Merriweather', serif; 
+  margin-top: -30px;
+}
+
+#order-form{
+  height: 400px;
+  align-items: center;
+}
+
+input[type="checkbox"]{
+  appearance: nonce;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  width: 10%;
+  clear: both;
+}
+
+.form-group {
+  margin-top: 15px;
+}
+
+.header{
+  font-size: 30px;
+  color: #0f5d5e;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: bold;
+
+}
+
+.j{
+  outline : 2px solid black;
+}
+
+.bg-image {
+  outline: 2px solid black;
+  background-image: url(/img/rest.webp);
+  padding: 20em;
+}

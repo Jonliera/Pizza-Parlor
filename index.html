@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-
-  <link rel="stylesheet" href="css/styles.css" type="text">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/scripts.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Rubik:wght@300&display=swap" rel="stylesheet">
   <title>Pizza Parlor</title>
 </head>
-<body>
-  <div id="container">
-    <h1>Welcome to Delicious Pizza</h1>
-    <p>We are sure you've tasted Pizza but nothing like our pizza. Go ahead and order some delicious pizza</p>
+<body class="bg-image">
+<div id="container" class="jumbotron text-center">
+  
+    <h1> Constanza's Pizza</h1>
+    <img src="img/constanza.webp">
+    <h2>Our pizzas are cheap like George! They start at $8 dollars </h2>
     <form id="order-form">
       <div class="form-group">
         <p class="header">Choose the size of your pizza</p>
         <select id="size" class="form-contol">
         <option value="False"></option>
         <option value="Small">Small Pizza + $1</option>
-        <option value="Medium">Meidum Pizza + $3</option>
+        <option value="Medium">Medium Pizza + $3</option>
         <option value="Large">Large Pizza + $6</option>
         </select>
       </div>
       <div class="form-group">
-        <p class="topping-choice">Choose your Toppings. Each topping is $1</p>
-        <input type="checkbox" name="topping" value="salami">Salami<br>
-        <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
-        <input type="checkbox" name="topping" value="ham">Ham<br>
-        <input type="checkbox" name="topping" value="sausage">Sausage
+        <p class="header">Choose your Toppings. Each topping is $1</p>
+        <input type="checkbox" id="topping" name="topping" value="salami">
+        <label for ="topping">Salami</label>
+        <input type="checkbox" id="topping" name="topping" value="pepperoni">
+        <label for="topping">Pepperoni</label>
+        <input type="checkbox" id="topping" name="topping" value="ham">
+        <label for="topping">Ham</label>
+        <input type="checkbox" id="topping" name="topping" value="sausage">
+        <label for="topping">Sausage</label>
       </div>
       <button type="Submit">Order Pizza</button>
       </form>
       <div class="final-order">
         <h3>This is your total:</h3>
         <p id="totalprice"></p>
-        <button type="button" onclick="window.location.reload();">Back to Main Menu</button>
+        <button type="button" onclick="window.location.reload();">CLEAR FORM</button>
       </div>
   </div>
 </body>

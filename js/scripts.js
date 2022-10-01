@@ -1,29 +1,13 @@
 //Business logic
 
-function Pizza (size,salami,pepperoni,ham,sausage){
+function Pizza (size,toppings){
   this.size = size;
-  this.salami = salami;
-  this.pepperoni = pepperoni;
-  this.ham = ham;
-  this.sausage = sausage;
+  this.toppings = toppings;
+  this.price = 10;
 }
 
 Pizza.prototype.getTotalToppings = function() {
-  let amountOfToppings = 0;
-  if (this.salami){
-    amountOfToppings +=1;
-  }
-  if (this.pepperoni){
-    amountOfToppings +=1;
-  }
-  if (this.ham){
-    amountOfToppings +=1;
-  }
-  if (this.sausage){
-    amountOfToppings +=1;
-  }
-  
-  return amountOfToppings;
+  return this.toppings.length;
 }
 
 Pizza.prototype.getPrice = function(){
@@ -34,16 +18,17 @@ Pizza.prototype.getPrice = function(){
   const costOfToppings = costOfASingleTopping * amountOfToppings;
 
   let sizeDefinition;
-  if(this.size==='small'){
+  if(this.size==='Small'){
     sizeDefinition = 1;
   }
-  if (this.size==='medium'){
+  if (this.size==='Medium'){
     sizeDefinition = 3;
   }
-  if (this.size==='large'){
+  if (this.size==='Large'){
     sizeDefinition = 6
   }
   const totalCost = basePrice + sizeDefinition + costOfToppings;
+  this.price = totalCost
   return totalCost;
 }
 
@@ -51,9 +36,15 @@ Pizza.prototype.getPrice = function(){
 
 function handleFormSubmission(event){
   event.preventDefault();
-const newPizza =new Pizza('small','salami','pepperoni','ham','sausage');
-const totalPrice = newPizza.getPrice();
-document.querySelector("#totalprice").innerText = totalPrice;
+const pizzaSize = document.querySelector('#size').value;
+let toppingsArray = [];
+    document.querySelectorAll("input[name=topping]:checked").forEach(function(element) {
+      let topping = element['value'];
+      toppingsArray.push(topping);
+      });
+const newPizza =new Pizza(pizzaSize,toppingsArray);
+//const totalPrice = newPizza.getPrice();
+document.querySelector("#totalprice").innerText = newPizza.getPrice();
 }
 
 window.addEventListener('load',function(){
