@@ -13,7 +13,7 @@
 * _Javascript_
 
 ## Description
-A webpage that Uses HTML, Javascript and CSS to allow a user choose any size of pizza and toppings and return the price.
+A webpage that Uses HTML, Javascript and CSS to allow a user choose any size of pizza and toppings and return the price. Here is a link https://jonliera.github.io/Pizza-Parlor
 
 ## Tests
 
